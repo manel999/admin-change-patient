@@ -1,0 +1,52 @@
+.input {
+    margin: 2rem auto;
+    padding: 1rem;
+    width: 90%;
+    max-width: 40rem;
+  }
+  
+  .input label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    font-size: large;
+    color: #023925;
+  }
+  
+  .input input {
+    font: inherit;
+    display: block;
+    width: 90%;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+  }
+
+  .input h2{
+    color: #023925;
+    text-align: center;
+   
+  }
+  
+  .input input:focus {
+    outline: none;
+    border-color: #46bd91;
+  }
+
+  .input span{
+    font-size: 12px ;
+    padding: 2px;
+    color: red;
+    display: none; 
+  }
+
+  .input input:invalid[focused="true"]{
+    border: 1px solid red;
+  }
+
+  .input input:invalid[focused="true"] ~ span{
+      display: block;
+  }
+
